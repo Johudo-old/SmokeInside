@@ -76,7 +76,7 @@ body {
 .start-display {
 	height: 100vh;
 
-	background-image: url('../../src/images/bg1.png');
+	background-image: url('../images/bg1.png');
 	background-position: 50% 50%;
 	background-size: auto 100%;
 	background-repeat: no-repeat;
@@ -105,7 +105,7 @@ body {
 
 		&:before {
 			vertical-align: middle;
-			content: url('../../src/icons/whatsapp.png');
+			content: url('../icons/whatsapp.png');
 			margin-right: 8px;
 		}
 	}
