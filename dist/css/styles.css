@@ -1,0 +1,83 @@
+@charset "UTF-8";
+body {
+  font-family: "Exo 2", sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  color: inherit;
+  margin: 0 auto 80px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 200;
+  text-align: center;
+  color: inherit;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #c4a265;
+  border-radius: 58px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #c4a265;
+  padding: 20px 30px;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  color: #c4a265;
+  font-family: "Imprint", serif;
+  font-size: 32px;
+  text-align: center;
+  padding: 50px 0 0;
+  position: fixed;
+  width: 100%;
+}
+
+.logo:after {
+  content: "аренда кальянов";
+  font-weight: 200;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+}
+
+.start-display {
+  height: 100vh;
+  background-image: url("../../src/images/bg1.png");
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 38vh 20px 0;
+}
+
+.start-display .start-display__title {
+  margin: 0 auto 18px;
+}
+
+.start-display .start-display__whatsapp-button {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgba(76, 175, 80, 0.3);
+  color: #fff;
+  border-color: #4CAF50;
+  margin-top: 40px;
+}
+
+.start-display .start-display__whatsapp-button:before {
+  vertical-align: middle;
+  content: url("../../src/icons/whatsapp.png");
+  margin-right: 8px;
+}
