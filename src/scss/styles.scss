@@ -9,7 +9,8 @@ $gold-color: #c4a265;
 
 body {
 	font-family: $main-font;
-	color: $black-color;
+	color: $white-color;
+	background-color: #1a1b1e;
 }
 
 
@@ -18,7 +19,7 @@ body {
 	text-align: center;
 	font-weight: 500;
 	color: inherit;
-	margin: 0 auto 80px;
+	margin: 0 auto 30px;
 }
 
 
@@ -40,19 +41,36 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
-	color: $white-color;
 
 	padding: 20px 30px;
 	margin: 20px auto;
 
-	display: inline-block;
+	display: block;
+}
+
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+
+	background-color: #1a1b1e;
+
+	padding: 20px 0;
+
+	.header__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media screen and (min-width: 992px) {
+			justify-content: space-between;
+		}
+	}
 }
 
 
 .logo {
-	position: fixed;
-	width: 100%;
-
 	display: flex;
 	flex-direction: column;
 
@@ -60,9 +78,6 @@ body {
 	font-family: $logo-font;
 	font-size: 26px;
 	text-align: center;
-
-	padding: 50px 0 0;
-
 
 	&:after {
 		content: "аренда кальянов";
@@ -74,8 +89,44 @@ body {
 }
 
 
+.navigation {
+	display: none;
+
+	.navigation__item {
+		margin-left: 30px;
+		padding-bottom: 4px;
+
+		border-bottom: 1px solid transparent;
+		transition: 0.3s;
+
+		&:hover {
+			border-bottom: 1px solid $gold-color;
+		}
+	}
+
+
+	.navigation__item__static {
+		&:hover {
+			border-bottom: 1px solid transparent;
+		}
+	}
+
+
+	@media screen and (min-width: 992px) {
+		display: flex;
+
+	}
+}
+
+
+
+
+
 .start-display {
-	height: 100vh;
+	height: calc(100vh + 12px);
+
+	display: flex;
+	align-items: center;
 
 	background-color: #1a1b1e;
 	background-image: url('../images/bg1.png');
@@ -83,24 +134,63 @@ body {
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 
-	color: $white-color;
 	text-align: center;
 
-	padding: 35vh 20px 0;
+	padding: 0 20px 0;
+
+
+
+	@media screen and (min-width: 576px) {
+		padding: 0;
+	}
+
+	@media screen and (min-width: 992px) {
+		background-position: 20% 50%;
+		background-size: auto 150%;
+	}
+
+	.start-display__container {
+		@media screen and (min-width: 992px) {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+
+
+	.start-display__content {
+		padding-top: 8vh;
+
+		@media screen and (min-width: 992px) {
+			width: 35%;
+			margin-right: 15%
+		}
+	}
 
 
 	.start-display__title {
+		display: block;
 		margin: 0 auto 18px;
+
+		@media screen and (min-width: 992px) {
+			text-align: left;
+		}
+	}
+
+
+	.start-display__description {
+		display: block;
+
+		@media screen and (min-width: 992px) {
+			text-align: left;
+		}
 	}
 
 
 	.start-display__whatsapp-button {
-		display: inline-block;
-		vertical-align: middle;
+		display: block;
 
-		width: 85%;
+		width: 100%;
 
-		color: $white-color;
 		border-color: #4CAF50;
 		background-color: rgba(76, 175, 80, 0.1);
 
@@ -122,14 +212,169 @@ body {
 
 			margin-right: 8px;
 		}
+
+
+		@media screen and (min-width: 350px) {
+			width: 85%;
+		}
+
+
+		@media screen and (min-width: 520px) {
+			width: 75%;
+		}
+
+
+		@media screen and (min-width: 768px) {
+			width: 50%;
+		}
+
+
+		@media screen and (min-width: 992px) { 
+			width: 75%;
+			margin: 20px 0;
+		}
+
+
+		@media screen and (min-width: 1200px) { 
+			width: 65%;
+			margin: 20px 0;
+		}
 	}
 
 
 	.start-display__tel-button {
-		width: 85%;
+		width: 100%;
 		margin-top: 40px;
+
+
+		@media screen and (min-width: 350px) {
+			width: 85%;
+		}
+
+
+		@media screen and (min-width: 520px) {
+			width: 75%;
+		}
+
+
+		@media screen and (min-width: 768px) {
+			width: 50%;
+		}
+
+
+		@media screen and (min-width: 992px) { 
+			width: 75%;
+			margin: 20px 0;
+		}
+
+
+		@media screen and (min-width: 1200px) { 
+			width: 65%;
+			margin: 20px 0;
+		}
+	}
+}
+
+
+.price {
+	background-color: $white-color;
+
+	-webkit-box-shadow: 0px -3px 4px 4px rgba(255, 255, 255, 1);
+	-moz-box-shadow:    0px -3px 4px 4px rgba(255, 255, 255, 1);
+	box-shadow:         0px -3px 4px 4px rgba(255, 255, 255, 1);
+
+	color: $black-color;
+	text-align: left;
+
+	padding: 60px 0;
+
+
+	.price__title {
+		margin-bottom: 60px;
+	}
+
+	.price__item-number {
+		font-size: 52px;
+		line-height: 0.75em;
+		text-align: center;
+
+		width: 20%;
+
+		margin-right: 30px;
+	}
+
+	.price__item {
+		margin-bottom: 30px;
+		display: flex;
+	}
+
+	.price__item-title {
+		font-size: 18px;
+	}
+
+	.price__item-description {
+		text-align: left
+	}
+
+
+}
+
+
+.our-hookah {
+	padding: 60px 0;
+
+	text-align: center;
+
+	.our-hookah__carousel-item {
+		height: calc(100vw - 30px + 30px + 100px);
+	}
+
+	.our-hookah__carousel-indicators {
+		position: unset;
+		margin-bottom: 24px;
+	}
+
+
+	.our-hookah__carousel-image {
+		margin: 0 auto 30px;
+	}
+
+	.our-hookah__carousel-control-next, .our-hookah__carousel-control-prev {
+		display: none;
 	}
 
 }
 
 
+.footer {
+	padding: 40px 0;
+	border-top: 1px solid $black-color;
+
+	.footer-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-item {
+		padding: 0 4px;
+	}
+
+	.footer-link {
+		display: block;
+		width: 24px;
+		height: 24px;
+
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+
+	.footer-whatsapp {
+		background: url('/dist/icons/whatsapp-24.png');
+	}
+
+	.footer-instagram {
+		background: url('/dist/icons/instagram-24.png');
+	}
+
+}
