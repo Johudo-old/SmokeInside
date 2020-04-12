@@ -275,6 +275,18 @@ body {
   display: flex;
 }
 
+@media screen and (min-width: 425px) {
+  .price .price__item {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .price .price__item-main {
+    width: 250px;
+  }
+}
+
 .price .price__item-title {
   font-size: 18px;
 }
