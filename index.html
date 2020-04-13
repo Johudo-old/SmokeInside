@@ -32,13 +32,13 @@
 
 	<header class="header">
 		<div class="container header__container">
-			<div class="logo">SMOKE INSIDE</div>
+			<a href="https://smoke-inside.ru/" class="logo">SMOKE INSIDE</a>
 
 			<nav>
 				<ul class="navigation">
-					<li class="navigation__item"><a href="" class="navigation__link">Главная</a></li>
-					<li class="navigation__item"><a href="" class="navigation__link">Цены</a></li>
-					<li class="navigation__item"><a href="" class="navigation__link">Кальяны</a></li>
+					<li class="navigation__item"><span class="navigation__link" data-scroll-to="start-display">Главная</span></li>
+					<li class="navigation__item"><span class="navigation__link" data-scroll-to="price">Цены</span></li>
+					<li class="navigation__item"><span class="navigation__link" data-scroll-to="our-hookah">Кальяны</span></li>
 					<li class="navigation__item navigation__item__static">+7 (965) 675-40-80</li>
 				</ul>
 			</nav>
@@ -46,145 +46,105 @@
 	</header>
 
 
-	<div class="start-display">
-		<div class="start-display__container container">
-			<div class="start-display__content">
-				<h2 class="start-display__title title">Аренда кальянов в&nbsp;Хабаровске</h2>
-				<p class="start-display__description description">Аренда кальяна с&nbsp;бесплатной доставкой в&nbsp;любую точку Хабаровска. Уже&nbsp;через 60&nbsp;минут наш кальян будет у&nbsp;вас дома!</p>
-				<a href="tel:+79656754080" class="start-display__tel-button button">Позвонить</a>
-				<a href="https://wa.me/79656754080?text=Здраствуйте%2C%20могу%20ли%20я%20заказать%20кальян%3F" class="start-display__whatsapp-button button">Заказать в WhatsApp</a>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="price">
-		<div class="container">
-			<h2 class="price__title title">Наши цены</h2>
-			<ul class="price__list">
-				<li class="price__item">
-					<h1 class="price__item-number">1</h1>
-					<div class="price__item-main">
-						<h5 class="price__item-title">Стандарт - 900 руб</h5>
-						<p class="price__item-description description">Кальян в полной комплектации</p>
-						<p class="price__item-description description">+ 6 углей</p>
-					</div>
-				</li>
-				<li class="price__item">
-					<h1 class="price__item-number">2</h1>
-					<div class="price__item-main">
-						<h5 class="price__item-title">Премиум - от 1200 руб</h5>
-						<p class="price__item-description description">Кальян в полной комплектации</p>
-						<p class="price__item-description description">+ 6 углей</p>
-						<p class="price__item-description description">+ табак на 2-3 забивки</p>
-					</div>
-				</li>
-				<li class="price__item">
-					<h1 class="price__item-number">3</h1>
-					<div class="price__item-main">
-						<h5 class="price__item-title">Доставка - Бесплатно</h5>
-						<p class="price__item-description description">Доставка в любой район Хабаровска</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-
-	<div class="our-hookah">
-		<div class="container">
-			<h2 class="about-us__title title">Наши кальяны</h2>
-
-			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-				
-				<ol class="our-hookah__carousel-indicators carousel-indicators">
-					<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-					<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-					<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-				</ol>
-
-				<div class="carousel-inner">
-					<div class="our-hookah__carousel-item carousel-item active">
-						<img src="/dist/images/courusel-1.png" class="our-hookah__carousel-image" alt="Pandora Light">
-						<h5>Pandora Light</h5>
-						<p class="description">Кальян из нержавеющей стали с накладкой и основанием из полиацеталя. Отличный кальян, который сочетает в себе все необходимые для домашнего покура качества.</p>
-					</div>
-					<div class="our-hookah__carousel-item carousel-item">
-						<img src="/dist/images/courusel-2.png" class="our-hookah__carousel-image" alt="Богатырь Святогор">
-						<h5>Богатырь Святогоръ</h5>
-						<p class="description">Отличный кальян из нержавеющей стали. Основание из полиацеталя. Кальян разборный, компактный, отлично курится и подойдет как для домашнего использования, так и для выездов.</p>
-					</div>
-					<div class="our-hookah__carousel-item carousel-item">
-						<img src="/dist/images/courusel-3.png" class="our-hookah__carousel-image" alt="Mexanika Smoke">
-						<h5>Mexanika Smoke</h5>
-						<p class="description">Легкий, привлекательный, функциональный кальян от производителя паровых машин Mexanika Smoke прекрасно подходит для домашнего использования.</p>
-					</div>
-					<div class="our-hookah__carousel-item carousel-item">
-						<img src="/dist/images/courusel-4.png" class="our-hookah__carousel-image" alt="Арт-кальян">
-						<h5>Арт-кальян</h5>
-						<p class="description">Хороший и функциональный кальян от российского производителя Арт-кальян, который отлично подходит для использования дома в компании друзей.</p>
-					</div>
+	<main>
+		<section class="start-display" id="start-display">
+			<div class="start-display__container container">
+				<div class="start-display__content">
+					<h2 class="start-display__title title">Аренда кальянов в&nbsp;Хабаровске</h2>
+					<p class="start-display__description description">Аренда кальяна с&nbsp;бесплатной доставкой в&nbsp;любую точку Хабаровска. Уже&nbsp;через 60&nbsp;минут наш кальян будет у&nbsp;вас дома!</p>
+					<a href="tel:+79656754080" class="start-display__tel-button button">Позвонить</a>
+					<a href="https://wa.me/79656754080?text=Здраствуйте%2C%20могу%20ли%20я%20заказать%20кальян%3F" class="start-display__whatsapp-button button">Заказать в WhatsApp</a>
 				</div>
-
-				<a class="our-hookah__carousel-control-prev carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-
-				<a class="our-hookah__carousel-control-next carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-
-				
-
 			</div>
-		</div>
-	</div>
+		</section>
 
-<!--
-	<div class="about-us">
-		<div class="about-us__container container">
-			<h2 class="about-us__title title">Мы - SMOKE INSIDE, кампания по прокату кальянов в Хабаровске</h2>
 
-			<ul class="about-us__list">
-				<li class="about-us__item">
-					<div class="about-us__item-short-info">
-						<h3 class="about-us__item-info title">60 минут</h3>
-						<p class="about-us__item-short-description description">средняя длительность доставки</p>
+		<section class="price" id="price">
+			<div class="container">
+				<h2 class="price__title title">Наши цены</h2>
+				<ul class="price__list">
+					<li class="price__item">
+						<h1 class="price__item-number">1</h1>
+						<div class="price__item-main">
+							<h5 class="price__item-title">Стандарт - 900 руб</h5>
+							<p class="price__item-description description">Кальян в полной комплектации</p>
+							<p class="price__item-description description">+ 6 углей</p>
+						</div>
+					</li>
+					<li class="price__item">
+						<h1 class="price__item-number">2</h1>
+						<div class="price__item-main">
+							<h5 class="price__item-title">Премиум - от 1200 руб</h5>
+							<p class="price__item-description description">Кальян в полной комплектации</p>
+							<p class="price__item-description description">+ 6 углей</p>
+							<p class="price__item-description description">+ табак на 2-3 забивки</p>
+						</div>
+					</li>
+					<li class="price__item">
+						<h1 class="price__item-number">3</h1>
+						<div class="price__item-main">
+							<h5 class="price__item-title">Доставка - Бесплатно</h5>
+							<p class="price__item-description description">Доставка в любой район Хабаровска</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="our-hookah" id="our-hookah">
+			<div class="container">
+				<h2 class="about-us__title title">Наши кальяны</h2>
+
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+					
+					<ol class="our-hookah__carousel-indicators carousel-indicators">
+						<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="our-hookah__carousel-item carousel-item active">
+							<img src="/dist/images/courusel-1.png" class="our-hookah__carousel-image" alt="Pandora Light">
+							<h5>Pandora Light</h5>
+							<p class="description">Кальян из нержавеющей стали с накладкой и основанием из полиацеталя. Отличный кальян, который сочетает в себе все необходимые для домашнего покура качества.</p>
+						</div>
+						<div class="our-hookah__carousel-item carousel-item">
+							<img src="/dist/images/courusel-2.png" class="our-hookah__carousel-image" alt="Богатырь Святогор">
+							<h5>Богатырь Святогоръ</h5>
+							<p class="description">Отличный кальян из нержавеющей стали. Основание из полиацеталя. Кальян разборный, компактный, отлично курится и подойдет как для домашнего использования, так и для выездов.</p>
+						</div>
+						<div class="our-hookah__carousel-item carousel-item">
+							<img src="/dist/images/courusel-3.png" class="our-hookah__carousel-image" alt="Mexanika Smoke">
+							<h5>Mexanika Smoke</h5>
+							<p class="description">Легкий, привлекательный, функциональный кальян от производителя паровых машин Mexanika Smoke прекрасно подходит для домашнего использования.</p>
+						</div>
+						<div class="our-hookah__carousel-item carousel-item">
+							<img src="/dist/images/courusel-4.png" class="our-hookah__carousel-image" alt="Арт-кальян">
+							<h5>Арт-кальян</h5>
+							<p class="description">Хороший и функциональный кальян от российского производителя Арт-кальян, который отлично подходит для использования дома в компании друзей.</p>
+						</div>
 					</div>
-					<p class="about-us__item-long-description description">Для любителей вкусного кальяна мы готовы предоставить услугу его доставки. В течение 60 минут мы привезём чистый кальян в любое место в пределах Москвы.</p>
-				</li>
 
-				<li class="about-us__item">
-					<div class="about-us__item-short-info">
-						<h3 class="about-us__item-info title">Полный комплект</h3>
-						<p class="about-us__item-short-description description">кальяна для комфортного курения</p>
-					</div>
-					<p class="about-us__item-long-description description">Заказывая у нас, вы получите все необходимое для дымной церемонии — табак, угли, мундштуки, щипцы, калауд и, если пожелаете, готовые чаши из фруктов.</p>
-				</li>
+					<a class="our-hookah__carousel-control-prev carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
 
-				<li class="about-us__item">
-					<div class="about-us__item-short-info">
-						<h3 class="about-us__item-info title">Более 12 марок</h3>
-						<p class="about-us__item-short-description description">табака находится на нашем складе</p>
-					</div>
-					<p class="about-us__item-long-description description">Мы учитываем желания клиента, и поэтому готовы предоставить табак любой крепкости, ценовой и вкусовой категории.</p>
-				</li>
+					<a class="our-hookah__carousel-control-next carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 
-				<li class="about-us__item">
-					<div class="about-us__item-short-info">
-						<h3 class="about-us__item-info title">Сервис</h3>
-						<p class="about-us__item-short-description description">орентированный на клиента</p>
-					</div>
-					<p class="about-us__item-long-description description">Заказать кальян вы можете домой, на природу, в офис, на банкет и даже на свадьбу. Для этого заполните форму на данном сайте и мы свяжемся с вами!</p>
-				</li>
-			</ul>
-		</div>
-	</div>
+					
 
--->
+				</div>
+			</div>
+		</section>
+	</main>
+
 
 	<footer class="footer container">
 		<ul class="footer-list">
@@ -193,10 +153,13 @@
 		</ul>
 	</footer>
 
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="/dist/js/main.js"></script>
 
 </body>
 

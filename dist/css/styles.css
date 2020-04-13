@@ -69,8 +69,18 @@ body {
   font-size: 14px;
 }
 
+.logo:hover {
+  color: #c4a265;
+}
+
 .navigation {
   display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .navigation {
+    display: flex;
+  }
 }
 
 .navigation .navigation__item {
@@ -88,10 +98,8 @@ body {
   border-bottom: 1px solid transparent;
 }
 
-@media screen and (min-width: 992px) {
-  .navigation {
-    display: flex;
-  }
+.navigation .navigation__link {
+  cursor: pointer;
 }
 
 .start-display {
