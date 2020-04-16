@@ -165,7 +165,7 @@ body {
 
 
 	.start-display__content {
-		padding-top: 8vh;
+		padding-top: 12vh;
 
 		@media screen and (min-width: 992px) {
 			width: 35%;
@@ -194,14 +194,34 @@ body {
 
 
 	.start-display__whatsapp-button {
+		border-color: #4CAF50;
+		background-color: rgba(76, 175, 80, 0.1);
+
+		&:before {
+			background: url('../icons/whatsapp.png');
+		}
+	}
+	
+
+	.start-display__instagram-button {
+		position: relative;
+
+		border-color: rgba(193, 53, 132, 1); 
+		background: linear-gradient(45deg, rgba(64, 93, 230, 0.1), rgba(88, 81, 219, 0.1), rgba(131, 58, 180, 0.1), rgba(193, 53, 132, 0.1), rgba(225, 48, 108, 0.1), rgba(253, 29, 29, 0.1));
+
+		&:before {
+			background: url('../icons/instagram.png');
+		}
+
+	}
+
+
+	.start-display__whatsapp-button, .start-display__instagram-button {
 		display: block;
 
 		width: 100%;
 
-		border-color: #4CAF50;
-		background-color: rgba(76, 175, 80, 0.1);
-
-		margin: 0 auto;
+		margin: 0 auto 20px;
 
 
 		&:before {
@@ -213,7 +233,6 @@ body {
 			width: 16px;
 			height: 16px;
 
-			background: url('../icons/whatsapp.png');
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 

@@ -136,7 +136,7 @@ body {
 }
 
 .start-display .start-display__content {
-  padding-top: 8vh;
+  padding-top: 12vh;
 }
 
 @media screen and (min-width: 992px) {
@@ -168,52 +168,68 @@ body {
 }
 
 .start-display .start-display__whatsapp-button {
-  display: block;
-  width: 100%;
   border-color: #4CAF50;
   background-color: rgba(76, 175, 80, 0.1);
-  margin: 0 auto;
 }
 
 .start-display .start-display__whatsapp-button:before {
+  background: url("../icons/whatsapp.png");
+}
+
+.start-display .start-display__instagram-button {
+  position: relative;
+  border-color: #c13584;
+  background: linear-gradient(45deg, rgba(64, 93, 230, 0.1), rgba(88, 81, 219, 0.1), rgba(131, 58, 180, 0.1), rgba(193, 53, 132, 0.1), rgba(225, 48, 108, 0.1), rgba(253, 29, 29, 0.1));
+}
+
+.start-display .start-display__instagram-button:before {
+  background: url("../icons/instagram.png");
+}
+
+.start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
+  display: block;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.start-display .start-display__whatsapp-button:before, .start-display .start-display__instagram-button:before {
   display: inline-block;
   vertical-align: bottom;
   content: '';
   width: 16px;
   height: 16px;
-  background: url("../icons/whatsapp.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin-right: 8px;
 }
 
 @media screen and (min-width: 350px) {
-  .start-display .start-display__whatsapp-button {
+  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
     width: 85%;
   }
 }
 
 @media screen and (min-width: 520px) {
-  .start-display .start-display__whatsapp-button {
+  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
     width: 75%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .start-display .start-display__whatsapp-button {
+  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .start-display .start-display__whatsapp-button {
+  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
     width: 75%;
     margin: 20px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .start-display .start-display__whatsapp-button {
+  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
     width: 65%;
     margin: 20px 0;
   }

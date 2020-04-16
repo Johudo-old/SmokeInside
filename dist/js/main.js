@@ -1,15 +1,15 @@
 (function () {
 	'use strict';
 
-	let navigation = document.querySelector('.navigation');
-	let items = navigation.querySelectorAll('span');
+	var navigation = document.querySelector('.navigation');
+	var items = navigation.querySelectorAll('span');
 
 
 	items.forEach( function(element) {
 		element.onclick = function (event) {
 
-			let containerID = '#' + event.target.attributes['data-scroll-to'].value;
-			let container = $(containerID);
+			var containerID = '#' + event.target.attributes['data-scroll-to'].value;
+			var container = $(containerID);
 
 			if (container.length === 1) {
 				$("html,body").animate({scrollTop: container.offset().top - $('header').height() });
