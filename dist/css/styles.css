@@ -194,7 +194,7 @@ body {
 }
 
 .start-display .start-display__whatsapp-button {
-  border-color: #4CAF50;
+  border-color: #4caf50;
   background-color: rgba(76, 175, 80, 0.1);
 }
 
@@ -213,16 +213,18 @@ body {
   background: url("../icons/instagram.png");
 }
 
-.start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
+.start-display .start-display__whatsapp-button,
+.start-display .start-display__instagram-button {
   display: block;
   width: 100%;
   margin: 0 auto 20px;
 }
 
-.start-display .start-display__whatsapp-button:before, .start-display .start-display__instagram-button:before {
+.start-display .start-display__whatsapp-button:before,
+.start-display .start-display__instagram-button:before {
   display: inline-block;
   vertical-align: bottom;
-  content: '';
+  content: "";
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
@@ -231,32 +233,37 @@ body {
 }
 
 @media screen and (min-width: 350px) {
-  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
+  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__instagram-button {
     width: 85%;
   }
 }
 
 @media screen and (min-width: 520px) {
-  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
+  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__instagram-button {
     width: 75%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
+  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__instagram-button {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
+  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__instagram-button {
     width: 75%;
     margin: 20px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .start-display .start-display__whatsapp-button, .start-display .start-display__instagram-button {
+  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__instagram-button {
     width: 65%;
     margin: 20px 0;
   }
@@ -313,6 +320,7 @@ body {
 }
 
 .price .price__item-number {
+  flex-shrink: 0;
   font-size: 52px;
   line-height: 0.75em;
   text-align: center;
@@ -327,7 +335,7 @@ body {
   display: flex;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 500px) {
   .price .price__item {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -335,9 +343,9 @@ body {
   }
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 500px) {
   .price .price__item-main {
-    width: 250px;
+    width: 325px;
   }
 }
 
@@ -391,13 +399,15 @@ body {
   margin: 0 auto 30px;
 }
 
-.our-hookah .our-hookah__carousel-control-next, .our-hookah .our-hookah__carousel-control-prev {
+.our-hookah .our-hookah__carousel-control-next,
+.our-hookah .our-hookah__carousel-control-prev {
   display: none;
   padding-top: 250px;
 }
 
 @media screen and (min-width: 600px) {
-  .our-hookah .our-hookah__carousel-control-next, .our-hookah .our-hookah__carousel-control-prev {
+  .our-hookah .our-hookah__carousel-control-next,
+  .our-hookah .our-hookah__carousel-control-prev {
     display: block;
   }
 }
