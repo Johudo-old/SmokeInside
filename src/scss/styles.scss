@@ -1,485 +1,455 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-
-$main-font: 'Exo 2', sans-serif;
-$logo-font: 'Imprint', serif;
-
+$main-font: "Exo 2", sans-serif;
+$logo-font: "Imprint", serif;
 
 $white-color: #fff;
 $black-color: #333;
 $gold-color: #c4a265;
 
 body {
-	font-family: $main-font;
-	color: $white-color;
-	background-color: #1a1b1e;
+    font-family: $main-font;
+    color: $white-color;
+    background-color: #1a1b1e;
 }
-
 
 .title {
-	font-size: 24px;
-	text-align: center;
-	font-weight: 500;
-	color: inherit;
-	margin: 0 auto 30px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: inherit;
+    margin: 0 auto 30px;
 }
-
 
 .description {
-	font-size: 14px;
-	font-weight: 200;
-	text-align: center;	
-	color: inherit;
-	margin: 0 auto;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    color: inherit;
+    margin: 0 auto;
 }
-
 
 .button {
-	background-color: rgba(196, 162, 101, 0.1);
-	
-	border: 2px solid $gold-color;
-	border-radius: 54px;
+    background-color: rgba(196, 162, 101, 0.1);
 
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 400;
+    border: 2px solid $gold-color;
+    border-radius: 54px;
 
-	padding: 20px 30px;
-	margin: 20px auto;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
 
-	display: block;
+    padding: 20px 30px;
+    margin: 20px auto;
+
+    display: block;
 }
-
 
 .header {
-	position: fixed;
-	width: 100%;
-	z-index: 10;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 
-	background-color: #1a1b1e;
+    background-color: #1a1b1e;
 
-	padding: 20px 0;
+    padding: 20px 0;
 
-	.header__container {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+    .header__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
 
-		@media screen and (min-width: 992px) {
-			-webkit-box-pack: justify;
-			    -ms-flex-pack: justify;
-			        justify-content: space-between;
-		}
-	}
+        @media screen and (min-width: 992px) {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+    }
 }
-
 
 .logo {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 
-	color: $gold-color;
-	font-family: $logo-font;
-	font-size: 26px;
-	text-align: center;
+    color: $gold-color;
+    font-family: $logo-font;
+    font-size: 26px;
+    text-align: center;
 
-	&:after {
-		content: "аренда кальянов";
-		
-		font-weight: 200;
-		font-family: $main-font;
-		font-size: 14px;
-	}
+    &:after {
+        content: "аренда кальянов";
 
-	&:hover {
-		color: $gold-color;
-	}
+        font-weight: 200;
+        font-family: $main-font;
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: $gold-color;
+    }
 }
-
 
 .navigation {
-	display: none;
+    display: none;
 
-	@media screen and (min-width: 992px) {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-	}
+    @media screen and (min-width: 992px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
 
-	.navigation__item {
-		margin-left: 30px;
-		padding-bottom: 4px;
+    .navigation__item {
+        margin-left: 30px;
+        padding-bottom: 4px;
 
-		border-bottom: 1px solid transparent;
-		-webkit-transition: 0.3s;
-		-o-transition: 0.3s;
-		transition: 0.3s;
+        border-bottom: 1px solid transparent;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
 
-		&:hover {
-			border-bottom: 1px solid $gold-color;
-		}
-	}
+        &:hover {
+            border-bottom: 1px solid $gold-color;
+        }
+    }
 
+    .navigation__item__static {
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
 
-	.navigation__item__static {
-		&:hover {
-			border-bottom: 1px solid transparent;
-		}
-	}
-
-	
-	.navigation__link {
-		cursor: pointer;
-	}
+    .navigation__link {
+        cursor: pointer;
+    }
 }
-
-
-
-
 
 .start-display {
-	height: calc(100vh + 12px);
+    height: calc(100vh + 12px);
 
-	display: -webkit-box;
+    display: -webkit-box;
 
-	display: -ms-flexbox;
+    display: -ms-flexbox;
 
-	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 
-	background-color: #1a1b1e;
-	background-image: url('../images/bg1.png');
-	background-position: 50% 50%;
-	background-size: auto 100%;
-	background-repeat: no-repeat;
+    background-color: #1a1b1e;
+    background-image: url("../images/bg1.png");
+    background-position: 50% 50%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 
-	text-align: center;
+    text-align: center;
 
-	padding: 0 20px 0;
+    padding: 0 20px 0;
 
+    @media screen and (min-width: 576px) {
+        padding: 0;
+    }
 
+    @media screen and (min-width: 992px) {
+        background-position: 20% 50%;
+        background-size: auto 150%;
+    }
 
-	@media screen and (min-width: 576px) {
-		padding: 0;
-	}
+    .start-display__container {
+        @media screen and (min-width: 992px) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+        }
+    }
 
-	@media screen and (min-width: 992px) {
-		background-position: 20% 50%;
-		background-size: auto 150%;
-	}
+    .start-display__content {
+        padding-top: 12vh;
 
-	.start-display__container {
-		@media screen and (min-width: 992px) {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-pack: end;
-			    -ms-flex-pack: end;
-			        justify-content: flex-end;
-		}
-	}
+        @media screen and (min-width: 992px) {
+            width: 35%;
+            margin-right: 15%;
+        }
+    }
 
+    .start-display__title {
+        display: block;
+        margin: 0 auto 18px;
 
-	.start-display__content {
-		padding-top: 12vh;
+        @media screen and (min-width: 992px) {
+            text-align: left;
+        }
+    }
 
-		@media screen and (min-width: 992px) {
-			width: 35%;
-			margin-right: 15%
-		}
-	}
+    .start-display__description {
+        display: block;
 
+        @media screen and (min-width: 992px) {
+            text-align: left;
+        }
+    }
 
-	.start-display__title {
-		display: block;
-		margin: 0 auto 18px;
+    .start-display__whatsapp-button {
+        border-color: #4caf50;
+        background-color: rgba(76, 175, 80, 0.1);
 
-		@media screen and (min-width: 992px) {
-			text-align: left;
-		}
-	}
+        &:before {
+            background: url("../icons/whatsapp.png");
+        }
+    }
 
+    .start-display__instagram-button {
+        position: relative;
 
-	.start-display__description {
-		display: block;
+        border-color: rgba(193, 53, 132, 1);
+        background: -o-linear-gradient(
+            45deg,
+            rgba(64, 93, 230, 0.1),
+            rgba(88, 81, 219, 0.1),
+            rgba(131, 58, 180, 0.1),
+            rgba(193, 53, 132, 0.1),
+            rgba(225, 48, 108, 0.1),
+            rgba(253, 29, 29, 0.1)
+        );
+        background: linear-gradient(
+            45deg,
+            rgba(64, 93, 230, 0.1),
+            rgba(88, 81, 219, 0.1),
+            rgba(131, 58, 180, 0.1),
+            rgba(193, 53, 132, 0.1),
+            rgba(225, 48, 108, 0.1),
+            rgba(253, 29, 29, 0.1)
+        );
 
-		@media screen and (min-width: 992px) {
-			text-align: left;
-		}
-	}
+        &:before {
+            background: url("../icons/instagram.png");
+        }
+    }
 
+    .start-display__whatsapp-button,
+    .start-display__instagram-button {
+        display: block;
 
-	.start-display__whatsapp-button {
-		border-color: #4CAF50;
-		background-color: rgba(76, 175, 80, 0.1);
+        width: 100%;
 
-		&:before {
-			background: url('../icons/whatsapp.png');
-		}
-	}
-	
+        margin: 0 auto 20px;
 
-	.start-display__instagram-button {
-		position: relative;
+        &:before {
+            display: inline-block;
+            vertical-align: bottom;
 
-		border-color: rgba(193, 53, 132, 1); 
-		background: -o-linear-gradient(45deg, rgba(64, 93, 230, 0.1), rgba(88, 81, 219, 0.1), rgba(131, 58, 180, 0.1), rgba(193, 53, 132, 0.1), rgba(225, 48, 108, 0.1), rgba(253, 29, 29, 0.1)); 
-		background: linear-gradient(45deg, rgba(64, 93, 230, 0.1), rgba(88, 81, 219, 0.1), rgba(131, 58, 180, 0.1), rgba(193, 53, 132, 0.1), rgba(225, 48, 108, 0.1), rgba(253, 29, 29, 0.1));
+            content: "";
 
-		&:before {
-			background: url('../icons/instagram.png');
-		}
+            width: 16px;
+            height: 16px;
 
-	}
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
 
+            margin-right: 8px;
+        }
 
-	.start-display__whatsapp-button, .start-display__instagram-button {
-		display: block;
+        @media screen and (min-width: 350px) {
+            width: 85%;
+        }
 
-		width: 100%;
+        @media screen and (min-width: 520px) {
+            width: 75%;
+        }
 
-		margin: 0 auto 20px;
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
 
+        @media screen and (min-width: 992px) {
+            width: 75%;
+            margin: 20px 0;
+        }
 
-		&:before {
-			display: inline-block;
-			vertical-align: bottom;
+        @media screen and (min-width: 1200px) {
+            width: 65%;
+            margin: 20px 0;
+        }
+    }
 
-			content: '';
+    .start-display__tel-button {
+        width: 100%;
+        margin-top: 40px;
 
-			width: 16px;
-			height: 16px;
+        @media screen and (min-width: 350px) {
+            width: 85%;
+        }
 
-			background-repeat: no-repeat;
-			background-position: 50% 50%;
+        @media screen and (min-width: 520px) {
+            width: 75%;
+        }
 
-			margin-right: 8px;
-		}
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
 
+        @media screen and (min-width: 992px) {
+            width: 75%;
+            margin: 20px 0;
+        }
 
-		@media screen and (min-width: 350px) {
-			width: 85%;
-		}
-
-
-		@media screen and (min-width: 520px) {
-			width: 75%;
-		}
-
-
-		@media screen and (min-width: 768px) {
-			width: 50%;
-		}
-
-
-		@media screen and (min-width: 992px) { 
-			width: 75%;
-			margin: 20px 0;
-		}
-
-
-		@media screen and (min-width: 1200px) { 
-			width: 65%;
-			margin: 20px 0;
-		}
-	}
-
-
-	.start-display__tel-button {
-		width: 100%;
-		margin-top: 40px;
-
-
-		@media screen and (min-width: 350px) {
-			width: 85%;
-		}
-
-
-		@media screen and (min-width: 520px) {
-			width: 75%;
-		}
-
-
-		@media screen and (min-width: 768px) {
-			width: 50%;
-		}
-
-
-		@media screen and (min-width: 992px) { 
-			width: 75%;
-			margin: 20px 0;
-		}
-
-
-		@media screen and (min-width: 1200px) { 
-			width: 65%;
-			margin: 20px 0;
-		}
-	}
+        @media screen and (min-width: 1200px) {
+            width: 65%;
+            margin: 20px 0;
+        }
+    }
 }
-
 
 .price {
-	background-color: $white-color;
+    background-color: $white-color;
 
-	-webkit-box-shadow: 0px -3px 4px 4px rgba(255, 255, 255, 1);
-	box-shadow:         0px -3px 4px 4px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px -3px 4px 4px rgba(255, 255, 255, 1);
+    box-shadow: 0px -3px 4px 4px rgba(255, 255, 255, 1);
 
-	color: $black-color;
-	text-align: left;
+    color: $black-color;
+    text-align: left;
 
-	padding: 60px 0;
+    padding: 60px 0;
 
+    .price__title {
+        margin-bottom: 60px;
+    }
 
-	.price__title {
-		margin-bottom: 60px;
-	}
+    .price__item-number {
+        font-size: 52px;
+        line-height: 0.75em;
+        text-align: center;
 
-	.price__item-number {
-		font-size: 52px;
-		line-height: 0.75em;
-		text-align: center;
+        width: 20%;
 
-		width: 20%;
+        margin-right: 30px;
+    }
 
-		margin-right: 30px;
-	}
+    .price__item {
+        margin-bottom: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
 
-	.price__item {
-		margin-bottom: 30px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+        @media screen and (min-width: 425px) {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
 
-		@media screen and (min-width: 425px) {
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
-		}
-	}
+    .price__item-main {
+        @media screen and (min-width: 425px) {
+            width: 250px;
+        }
+    }
 
-	.price__item-main {
-		@media screen and (min-width: 425px) {
-			width: 250px;
-		}
-	}
+    .price__item-title {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
 
-	.price__item-title {
-		font-size: 18px;
-		margin-bottom: 0.5rem;
-	}
-
-	.price__item-description {
-		text-align: left
-	}
-
-
+    .price__item-description {
+        text-align: left;
+    }
 }
-
 
 .our-hookah {
-	padding: 60px 0 30px;
+    padding: 60px 0 30px;
 
-	text-align: center;
+    text-align: center;
 
-	.our-hookah__carousel-item {
-		height: calc(100vw - 30px + 30px + 140px);
+    .our-hookah__carousel-item {
+        height: calc(100vw - 30px + 30px + 140px);
 
-		@media screen and (min-width: 425px) {
-			height: calc(100vw - 30px + 30px + 100px);
-		}
-		
-		@media screen and (min-width: 500px) {
-			height: calc(500px + 30px + 80px);
-		}
-	}
+        @media screen and (min-width: 425px) {
+            height: calc(100vw - 30px + 30px + 100px);
+        }
 
+        @media screen and (min-width: 500px) {
+            height: calc(500px + 30px + 80px);
+        }
+    }
 
-	.our-hookah__courusel-title {
-		font-size: 1.25rem;
-		margin-bottom: 0.5rem;
-	}
+    .our-hookah__courusel-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
 
+    .our-hookah__courusel-description {
+        @media screen and (min-width: 530px) {
+            width: 500px;
+        }
+    }
 
-	.our-hookah__courusel-description {
-		@media screen and (min-width: 530px) {
-			width: 500px;
-		}
-	}
+    .our-hookah__carousel-indicators {
+        position: unset;
+        margin-bottom: 24px;
+    }
 
+    .our-hookah__carousel-image {
+        margin: 0 auto 30px;
+    }
 
-	.our-hookah__carousel-indicators {
-		position: unset;
-		margin-bottom: 24px;
-	}
+    .our-hookah__carousel-control-next,
+    .our-hookah__carousel-control-prev {
+        display: none;
 
+        padding-top: 250px;
 
-	.our-hookah__carousel-image {
-		margin: 0 auto 30px;
-	}
-
-
-	.our-hookah__carousel-control-next, .our-hookah__carousel-control-prev {
-		display: none;
-
-		padding-top: 250px;
-
-		@media screen and (min-width: 600px) {
-			display: block;
-		}
-	}
-
+        @media screen and (min-width: 600px) {
+            display: block;
+        }
+    }
 }
 
-
 .footer {
-	padding: 40px 0;
-	border-top: 1px solid $black-color;
+    padding: 40px 0;
+    border-top: 1px solid $black-color;
 
-	.footer-list {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-	}
+    .footer-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 
-	.footer-item {
-		padding: 0 4px;
-	}
+    .footer-item {
+        padding: 0 4px;
+    }
 
-	.footer-link {
-		display: block;
-		width: 24px;
-		height: 24px;
+    .footer-link {
+        display: block;
+        width: 24px;
+        height: 24px;
 
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-	}
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
 
-	.footer-whatsapp {
-		background: url('/dist/icons/whatsapp-24.png');
-	}
+    .footer-whatsapp {
+        background: url("/dist/icons/whatsapp-24.png");
+    }
 
-	.footer-instagram {
-		background: url('/dist/icons/instagram-24.png');
-	}
-
+    .footer-instagram {
+        background: url("/dist/icons/instagram-24.png");
+    }
 }
