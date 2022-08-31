@@ -70,6 +70,7 @@
                         <li class="navigation__item navigation__item__static" itemprop="telephone">
                             +7 (965) 675-40-80
                         </li>
+                        <meta class="hidden-visibility" itemprop="address" content="г. Хабаровск" />
                     </ul>
                 </nav>
             </div>
@@ -107,8 +108,11 @@
                             <span class="price__item-number">1</span>
                             <div class="price__item-main">
                                 <h3 class="price__item-title" itemprop="name">
-                                    Стандарт — <span itemprop="price">1000 руб.</span>
+                                    Стандарт — <span itemprop="price">1000</span> руб.
                                 </h3>
+
+                                <meta itemprop="priceCurrency" content="RUB" />
+
                                 <div>
                                     <p class="price__item-description description" itemprop="includesObject">
                                         Кальян в полной комплектации
@@ -123,8 +127,11 @@
                             <span class="price__item-number">2</span>
                             <div class="price__item-main">
                                 <h3 class="price__item-title" itemprop="name">
-                                    Премиум — <span itemprop="price">1300 руб.</span>
+                                    Премиум — <span itemprop="price">1300</span> руб.
                                 </h3>
+
+                                <meta itemprop="priceCurrency" content="RUB" />
+
                                 <div>
                                     <p class="price__item-description description" itemprop="includesObject">
                                         Кальян в полной комплектации
@@ -142,8 +149,11 @@
                             <span class="price__item-number">3</span>
                             <div class="price__item-main">
                                 <h3 class="price__item-title" itemprop="name">
-                                    Люкс — <span itemprop="price">1500 руб.</span>
+                                    Люкс — <span itemprop="price">1500</span> руб.
                                 </h3>
+
+                                <meta itemprop="priceCurrency" content="RUB" />
+
                                 <div>
                                     <p class="price__item-description description" itemprop="includesObject">
                                         Кальян в полной комплектации
@@ -205,8 +215,8 @@
                                 <div
                                     class="hidden-visibility"
                                     itemprop="review"
-                                    itemtype="https://schema.org/Review"
                                     itemscope
+                                    itemtype="https://schema.org/Review"
                                 >
                                     <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
                                         <meta itemprop="name" content="Константин Прокофьев" />
@@ -216,8 +226,18 @@
                                         <meta itemprop="bestRating" content="5" />
                                     </div>
                                 </div>
-                            </div>
 
+                                <div
+                                    class="hidden-visibility"
+                                    itemprop="offers"
+                                    itemscope
+                                    itemtype="http://schema.org/AggregateOffer"
+                                >
+                                    <meta itemprop="lowPrice" content="1000" />
+                                    <meta itemprop="highPrice" content="1500" />
+                                    <meta itemprop="priceCurrency" content="RUB" />
+                                </div>
+                            </div>
                             <div
                                 class="our-hookah__carousel-item carousel-item"
                                 itemprop="owns"
@@ -251,8 +271,18 @@
                                         <meta itemprop="bestRating" content="5" />
                                     </div>
                                 </div>
-                            </div>
 
+                                <div
+                                    class="hidden-visibility"
+                                    itemprop="offers"
+                                    itemscope
+                                    itemtype="http://schema.org/AggregateOffer"
+                                >
+                                    <meta itemprop="lowPrice" content="1000" />
+                                    <meta itemprop="highPrice" content="1500" />
+                                    <meta itemprop="priceCurrency" content="RUB" />
+                                </div>
+                            </div>
                             <div
                                 class="our-hookah__carousel-item carousel-item"
                                 itemprop="owns"
@@ -285,6 +315,17 @@
                                         <meta itemprop="ratingValue" content="5" />
                                         <meta itemprop="bestRating" content="5" />
                                     </div>
+                                </div>
+
+                                <div
+                                    class="hidden-visibility"
+                                    itemprop="offers"
+                                    itemscope
+                                    itemtype="http://schema.org/AggregateOffer"
+                                >
+                                    <meta itemprop="lowPrice" content="1000" />
+                                    <meta itemprop="highPrice" content="1500" />
+                                    <meta itemprop="priceCurrency" content="RUB" />
                                 </div>
                             </div>
 
@@ -321,28 +362,39 @@
                                         <meta itemprop="bestRating" content="5" />
                                     </div>
                                 </div>
+
+                                <div
+                                    class="hidden-visibility"
+                                    itemprop="offers"
+                                    itemscope
+                                    itemtype="http://schema.org/AggregateOffer"
+                                >
+                                    <meta itemprop="lowPrice" content="1000" />
+                                    <meta itemprop="highPrice" content="1500" />
+                                    <meta itemprop="priceCurrency" content="RUB" />
+                                </div>
                             </div>
+
+                            <a
+                                class="our-hookah__carousel-control-prev carousel-control-prev"
+                                href="#carouselExampleCaptions"
+                                role="button"
+                                data-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+
+                            <a
+                                class="our-hookah__carousel-control-next carousel-control-next"
+                                href="#carouselExampleCaptions"
+                                role="button"
+                                data-slide="next"
+                            >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
-
-                        <a
-                            class="our-hookah__carousel-control-prev carousel-control-prev"
-                            href="#carouselExampleCaptions"
-                            role="button"
-                            data-slide="prev"
-                        >
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-
-                        <a
-                            class="our-hookah__carousel-control-next carousel-control-next"
-                            href="#carouselExampleCaptions"
-                            role="button"
-                            data-slide="next"
-                        >
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
             </section>
@@ -400,10 +452,11 @@
                 webvisor: true,
             });
         </script>
-        <noscript
-            ><div>
-                <img src="https://mc.yandex.ru/watch/61989232" style="position: absolute; left: -9999px" alt="" /></div
-        ></noscript>
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/61989232" style="position: absolute; left: -9999px" alt="" />
+            </div>
+        </noscript>
         <!-- /Yandex.Metrika counter -->
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
