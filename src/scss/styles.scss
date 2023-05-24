@@ -345,10 +345,20 @@ body {
         display: -ms-flexbox;
         display: flex;
 
+        .price__item-title {
+            font-size: 18px;
+            margin-bottom: 0.5rem;
+        }
+
         @media screen and (min-width: 500px) {
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
+        }
+
+        &:last-child {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ddd;
         }
     }
 
@@ -358,13 +368,19 @@ body {
         }
     }
 
-    .price__item-title {
-        font-size: 18px;
-        margin-bottom: 0.5rem;
-    }
-
     .price__item-description {
         text-align: left;
+    }
+}
+
+.dop-price {
+    &__list {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    &__list-item {
+        padding: 4px 0;
     }
 }
 
