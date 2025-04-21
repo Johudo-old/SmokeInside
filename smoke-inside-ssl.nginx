@@ -7,8 +7,8 @@ server {
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
-    access_log /var/log/nginx/smoke-inside.access.log main;
-    error_log /var/log/nginx/smoke-inside.error.log warn;
+    access_log /var/log/nginx/smoke-inside.access.log;
+    error_log /var/log/nginx/smoke-inside.error.log;
 
     index index.html;
     root /var/www/SmokeInside;
