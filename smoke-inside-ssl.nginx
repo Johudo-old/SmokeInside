@@ -4,6 +4,8 @@ server {
 
     ssl_certificate /etc/letsencrypt/live/smoke-inside.ru/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/smoke-inside.ru/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
     index index.html;
     root /var/www/SmokeInside;
