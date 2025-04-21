@@ -1,0 +1,25 @@
+server {
+    listen 443 ssl;
+    server_name smoke-inside.ru;
+
+    ssl_certificate /etc/letsencrypt/live/smoke-inside.ru/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/smoke-inside.ru/privkey.pem;
+
+    index index.html;
+    root /var/www/SmokeInside;
+
+    location / {
+    }
+}
+
+server {
+    listen 80;
+    server_name smoke-inside.ru;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 80;
+    server_name www.smoke-inside.ru;
+    return 301 https://smoke-inside.ru$request_uri;
+}
