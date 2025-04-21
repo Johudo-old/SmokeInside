@@ -3,7 +3,7 @@ sudo apt-get upgrade
 
 sudo apt-get install nginx
 
-sudo cp ./smoke-inside.nginx /etc/nginx/sites-avalilable/
+sudo cp ./smoke-inside.nginx /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/smoke-inside.nginx /etc/nginx/sites-enabled/
 sudo cp -c ../SmokeInside /var/www/
 
