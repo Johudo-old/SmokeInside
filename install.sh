@@ -10,6 +10,7 @@ sudo cp -R ../SmokeInside /var/www/
 sudo ufw enable
 sudo ufw default deny
 sudo ufw allow 'Nginx HTTP'
+sudo ufw allow 443/tcp
 
 sudo systemctl restart nginx
 
