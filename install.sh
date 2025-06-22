@@ -11,6 +11,7 @@ sudo ufw enable
 sudo ufw default deny
 sudo ufw allow 'Nginx HTTP'
 sudo ufw allow 443/tcp
+sudo ufw allow 22/tcp
 
 sudo systemctl restart nginx
 
