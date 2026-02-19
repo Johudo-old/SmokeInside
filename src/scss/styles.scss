@@ -210,12 +210,12 @@ body {
         }
     }
 
-    .start-display__whatsapp-button {
-        border-color: #4caf50;
-        background-color: rgba(76, 175, 80, 0.1);
+    .start-display__telegram-button {
+        border-color: #0088cc;
+        background-color: rgba(0, 136, 204, 0.1);
 
         &:before {
-            background: url("../icons/whatsapp.png");
+            background: url("../icons/telegram.png");
         }
     }
 
@@ -247,7 +247,7 @@ body {
         }
     }
 
-    .start-display__whatsapp-button,
+    .start-display__telegram-button,
     .start-display__instagram-button {
         display: block;
 
@@ -317,6 +317,16 @@ body {
         @media screen and (min-width: 1200px) {
             width: 65%;
             margin: 20px 0;
+        }
+    }
+
+    .start-display__tel-button,
+    .start-display__telegram-button,
+    .start-display__instagram-button {
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 0.8;
         }
     }
 }
@@ -398,14 +408,14 @@ body {
     text-align: center;
 
     .our-hookah__carousel-item {
-        height: calc(100vw - 30px + 30px + 140px);
+        height: calc(100vw - 30px + 30px + 160px);
 
         @media screen and (min-width: 425px) {
-            height: calc(100vw - 30px + 30px + 100px);
+            height: calc(100vw - 30px + 30px + 120px);
         }
 
         @media screen and (min-width: 500px) {
-            height: calc(500px + 30px + 80px);
+            height: calc(500px + 30px + 120px);
         }
     }
 
@@ -427,6 +437,10 @@ body {
 
     .our-hookah__carousel-image {
         margin: 0 auto 30px;
+        display: block;
+        max-height: 500px;
+        border-radius: 12px;
+        box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 24px;
     }
 
     .our-hookah__carousel-control-next,
@@ -470,8 +484,8 @@ body {
         background-position: 50% 50%;
     }
 
-    .footer-whatsapp {
-        background: url("/dist/icons/whatsapp-24.png");
+    .footer-telegram {
+        background: url("/dist/icons/telegram-24.png");
     }
 
     .footer-instagram {

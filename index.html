@@ -1,594 +1,587 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <title>Аренда кальянов в Хабаровске Smoke Inside</title>
-
-        <link rel="canonical" href="https://smoke-inside.ru/" />
-        <meta name="keywords" content="аренда кальянов, кальян на дом, доставка кальяна, кальян Хабаровск" />
-        <meta
-            name="description"
-            content="Аренда кальянов SmokeInside в Хабаровске. Бесплатная доставка в любую точку города за 60 минут. Большой выбор вкусов и сервис ориентированный на клиента. Стоимость комплекта — от 900 рублей за сутки."
-        />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-        <!-- Open Graph -->
-        <meta property="og:title" content="Мы создадим атмосферу настоящей кальянной у вас дома!" />
-        <meta property="og:image" content="dist/images/smoke-inside.png" />
-        <meta property="og:image:width" content="1024" />
-        <meta property="og:image:height" content="576" />
-        <meta property="og:url" content="https://smoke-inside.ru" />
-        <meta property="og:site_name" content="Аренда кальянов SmokeInside" />
-        <meta property="og:type" content="website" />
-
-        <!-- Yandex -->
-        <meta name="yandex-verification" content="987679ac6fa3ad73" />
-
-        <!-- Bootstrap -->
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossorigin="anonymous"
-        />
-
-        <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="dist/css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="dist/css/start.css" />
-        <link rel="stylesheet" type="text/css" href="dist/css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500&display=swap" rel="stylesheet" />
-
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "Organization",
-                "url": "https://smoke-inside.ru/",
-                "image": "./dist/images/smoke-inside.png",
-                "telephone": "+7 (965) 675-40-80",
-                "address": "г. Хабаровск",
-                "name": "Аренда кальянов в Хабаровске",
-                "description": "Мы создадим атмосферу настоящей кальянной у вас дома, в течение 60 минут после заказа!",
-                "makesOffer": [
-                    {
-                        "@type": "Offer",
-                        "name": "Стандарт — 1400 руб.",
-                        "price": "1400",
-                        "priceCurrency": "RUB",
-                        "includesObject": ["Кальян в полной комплектации", "+ 6 углей"]
-                    },
-                    {
-                        "@type": "Offer",
-                        "name": "Премиум — 1700 руб.",
-                        "price": "1700",
-                        "priceCurrency": "RUB",
-                        "includesObject": ["Кальян в полной комплектации", "+ 6 углей", "+ легкий табак на 2-3 забивки"]
-                    },
-                    {
-                        "@type": "Offer",
-                        "name": "Люкс — 1900 руб.",
-                        "price": "1900",
-                        "priceCurrency": "RUB",
-                        "includesObject": [
-                            "Кальян в полной комплектации",
-                            "+ 6 углей",
-                            "+ крепкий табак на 2-3 забивки"
-                        ]
-                    }
-                ],
-                "owns": [
-                    {
-                        "@type": "Product",
-                        "image": "./dist/images/courusel-1.png",
-                        "name": "Pandora Light",
-                        "description": "Стильный кальян, дизайн которого отличается от стандартных «кальянов-палок», благодаря накладке на верхнюю часть шахты. Этот красавец сочетает в себе все необходимые качества для домашнего курения.",
-                        "review": {
-                            "@type": "Review",
-                            "author": { "@type": "Person", "name": "Константин Прокофьев" },
-                            "reviewRating": { "@type": "Rating", "ratingValue": "4.5", "bestRating": "5" },
-                            "offers": {
-                                "@type": "AggregateOffer",
-                                "lowPrice": "1400",
-                                "highPrice": "1900",
-                                "priceCurrency": "RUB"
-                            }
-                        }
-                    },
-                    {
-                        "@type": "Product",
-                        "image": "./dist/images/courusel-2.png",
-                        "name": "Богатыръ Святогоръ",
-                        "description": "Яркий представитель «кальянов-палок», которые очень популярны сегодня. Несмотря на простой дизайн, этот кальян имеет невероятно красивую продувку, которая удивит всех любителей домашней кальянной.",
-                        "review": {
-                            "@type": "Review",
-                            "author": { "@type": "Person", "name": "Никита Кузьмин" },
-                            "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" }
-                        },
-                        "offers": {
-                            "@type": "AggregateOffer",
-                            "lowPrice": "1400",
-                            "highPrice": "1900",
-                            "priceCurrency": "RUB"
-                        }
-                    },
-                    {
-                        "@type": "Product",
-                        "image": "./dist/images/courusel-3.png",
-                        "name": "Mexanika Smoke Parovoz",
-                        "description": "Привлекательный кальян, выполненный из испанской стали, с модным хайтек-индустриальным дизайном. Его функциональность идеально подходит для домашнего использования.",
-                        "review": {
-                            "@type": "Review",
-                            "author": { "@type": "Person", "name": "Теона Ермилова" },
-                            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-                        },
-                        "offers": {
-                            "@type": "AggregateOffer",
-                            "lowPrice": "1400",
-                            "highPrice": "1900",
-                            "priceCurrency": "RUB"
-                        }
-                    },
-                    {
-                        "@type": "Product",
-                        "image": "./dist/images/courusel-4.png",
-                        "name": "Арт-кальян",
-                        "description": "Хороший и функциональный кальян от российского производителя Арт-кальян. Благодаря своему простому дизайну, он отлично подойдет для домашнего курения в кругу любителей нестареющей классики.",
-                        "review": {
-                            "@type": "Review",
-                            "author": { "@type": "Person", "name": "Алёна Шувалова" },
-                            "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" }
-                        },
-                        "offers": {
-                            "@type": "AggregateOffer",
-                            "lowPrice": "1400",
-                            "highPrice": "1900",
-                            "priceCurrency": "RUB"
-                        }
-                    }
-                ]
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Аренда кальянов в Хабаровске Smoke Inside</title>
+  
+  <link rel="canonical" href="https://smoke-inside.ru/" />
+  <meta name="keywords" content="аренда кальянов Хабаровск, кальян на дом Хабаровск, доставка кальяна Хабаровск, кальян Хабаровск, прокат кальянов Хабаровск, кальян на вынос Хабаровск, кальян с доставкой на дом, Smoke Inside Хабаровск" />
+  <meta name="description" content="Аренда кальянов SmokeInside в Хабаровске. Бесплатная доставка в любую точку города за 60 минут. Большой выбор вкусов и сервис ориентированный на клиента. Стоимость комплекта — от 1500 рублей за сутки." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Мы создадим атмосферу настоящей кальянной у вас дома!" />
+  <meta property="og:image" content="dist/images/smoke-inside.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="576" />
+  <meta property="og:url" content="https://smoke-inside.ru" />
+  <meta property="og:site_name" content="Аренда кальянов SmokeInside" />
+  <meta property="og:type" content="website" />
+  
+  <meta name="author" content="Smoke Inside" />
+  <meta name="geo.region" content="RU-KHA" />
+  <meta name="geo.placename" content="Хабаровск" />
+  <meta name="geo.position" content="48.480223;135.071917" />
+  <meta name="ICBM" content="48.480223, 135.071917" />
+  
+  <!-- Yandex -->
+  <meta name="yandex-verification" content="987679ac6fa3ad73" />
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="dist/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="dist/css/start.css" />
+  <link rel="stylesheet" type="text/css" href="dist/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500&display=swap" rel="stylesheet" />
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SMOKE INSIDE",
+      "url": "https://smoke-inside.ru/",
+      "logo": "https://smoke-inside.ru/dist/images/smoke-inside.png",
+      "image": "https://smoke-inside.ru/dist/images/smoke-inside.png",
+      "description": "Аренда кальянов SmokeInside в Хабаровске. Бесплатная доставка в любую точку города за 60 минут. Большой выбор вкусов и сервис ориентированный на клиента. Стоимость комплекта — от 1500 рублей за сутки.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Хабаровск",
+        "addressCountry": "RU"
+      },
+      "telephone": "+7 (965) 675-40-80",
+      "sameAs": [
+        "https://www.instagram.com/smoke_inside_khv/",
+        "https://t.me/+79656754080",
+        "https://wa.me/79656754080"
+      ],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }],
+      "makesOffer": [{
+          "@type": "Offer",
+          "name": "Стандарт — 1500 руб.",
+          "description": "Кальян в полной комплектации + 6 углей",
+          "price": "1500",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://smoke-inside.ru/#price",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Аренда кальяна Стандарт"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Премиум — 1900 руб.",
+          "description": "Кальян в полной комплектации + 6 углей + легкий табак на 2 забивки",
+          "price": "1900",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://smoke-inside.ru/#price",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Аренда кальяна Премиум"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Люкс — 2000 руб.",
+          "description": "Кальян в полной комплектации + 6 углей + крепкий табак на 2 забивки",
+          "price": "2000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://smoke-inside.ru/#price",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Аренда кальяна Люкс"
+          }
+        }
+      ],
+      "owns": [{
+          "@type": "Product",
+          "name": "Alpha Hookah Green",
+          "description": "Alpha Hookah — эталон стиля и надежности. Узнаваемая вертикальная продувка и магнитный коннектор. Компактная шахта из нержавеющей стали обеспечивает идеальную тягу и чистый вкус.",
+          "image": "https://smoke-inside.ru/dist/images/courusel-1.jpg",
+          "brand": {
+            "@type": "Brand",
+            "name": "Alpha Hookah"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "1500",
+            "highPrice": "2000",
+            "priceCurrency": "RUB",
+            "offerCount": "1"
+          },
+          "review": {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "4.5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Константин Прокофьев"
             }
-        </script>
-    </head>
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Nube White One",
+          "description": "Элегантный Nube White One с матовым покрытием Soft Touch. Поворотный диффузор регулирует затяжку, а система охлаждения Cool Down дарит чистый вкус. Премиальный немецкий пластик, устойчивый к царапинам и нагреву.",
+          "image": "https://smoke-inside.ru/dist/images/courusel-2.jpg",
+          "brand": {
+            "@type": "Brand",
+            "name": "Nube"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "1500",
+            "highPrice": "2000",
+            "priceCurrency": "RUB",
+            "offerCount": "1"
+          },
+          "review": {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "4",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Никита Кузьмин"
+            }
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Alpha Hookah Black",
+          "description": "Alpha Hookah — эталон стиля и надежности. Узнаваемая вертикальная продувка и магнитный коннектор. Компактная шахта из нержавеющей стали обеспечивает идеальную тягу и чистый вкус.",
+          "image": "https://smoke-inside.ru/dist/images/courusel-3.jpg",
+          "brand": {
+            "@type": "Brand",
+            "name": "Alpha Hookah"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "1500",
+            "highPrice": "2000",
+            "priceCurrency": "RUB",
+            "offerCount": "1"
+          },
+          "review": {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Теона Ермилова"
+            }
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Koress K2",
+          "description": "KORESS K2 — идеальная тяга благодаря диффузору Turbo и широкой шахте. Магнитная фиксация шланга и чашки, продуманная продувка. Стильный итальянский дизайн и премиальные материалы в каждой детали.",
+          "image": "https://smoke-inside.ru/dist/images/courusel-4.jpg",
+          "brand": {
+            "@type": "Brand",
+            "name": "Koress"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "1500",
+            "highPrice": "2000",
+            "priceCurrency": "RUB",
+            "offerCount": "1"
+          },
+          "review": {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "4",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Алёна Шувалова"
+            }
+          }
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Услуги аренды кальянов",
+        "itemListElement": [{
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Доставка по центру",
+              "description": "Доставка по центральному району Хабаровска"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Доставка после 23:00",
+              "description": "Доставка после 23:00 — от 500 руб"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Помощь в подготовке кальяна",
+              "description": "Помощь в подготовке кальяна — от 300 руб"
+            }
+          }
+        ]
+      }
+    }
+    
+  </script>
+</head>
 
-    <body itemscope itemtype="http://schema.org/Organization">
-        <header class="header">
-            <div class="container header__container">
-                <a href="https://smoke-inside.ru/" class="logo" itemprop="url">SMOKE INSIDE</a>
-                <img
-                    src="./dist/images/smoke-inside.png"
-                    alt="SMOKE INSIDE"
-                    class="hidden-visibility"
-                    itemprop="image"
-                />
-
-                <nav>
-                    <ul class="navigation">
-                        <li class="navigation__item">
-                            <span class="navigation__link" data-scroll-to="start-display">Главная</span>
-                        </li>
-                        <li class="navigation__item">
-                            <span class="navigation__link" data-scroll-to="price">Цены</span>
-                        </li>
-                        <li class="navigation__item">
-                            <span class="navigation__link" data-scroll-to="our-hookah">Кальяны</span>
-                        </li>
-                        <li class="navigation__item navigation__item__static" itemprop="telephone">
-                            +7 (965) 675-40-80
-                        </li>
-                        <meta class="hidden-visibility" itemprop="address" content="г. Хабаровск" />
-                    </ul>
-                </nav>
+<body itemscope itemtype="https://schema.org/Organization">
+  <header class="header">
+    <div class="container header__container">
+      <a href="https://smoke-inside.ru/" class="logo" itemprop="url">SMOKE INSIDE</a>
+      <img src="./dist/images/smoke-inside.png" alt="SMOKE INSIDE" class="hidden-visibility" itemprop="image" />
+      
+      <nav>
+        <ul class="navigation">
+          <li class="navigation__item">
+            <span class="navigation__link" data-scroll-to="start-display">Главная</span>
+          </li>
+          <li class="navigation__item">
+            <span class="navigation__link" data-scroll-to="price">Цены</span>
+          </li>
+          <li class="navigation__item">
+            <span class="navigation__link" data-scroll-to="our-hookah">Кальяны</span>
+          </li>
+          <li class="navigation__item navigation__item__static" itemprop="telephone">
+            +7 (965) 675-40-80
+          </li>
+          <meta class="hidden-visibility" itemprop="address" content="г. Хабаровск" />
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="start-display" id="start-display">
+      <div class="start-display__container container">
+        <div class="start-display__content">
+          <h1 class="start-display__title title" itemprop="name">Аренда кальянов в&nbsp;Хабаровске</h1>
+          <p class="start-display__description description" itemprop="description">
+            Мы&nbsp;создадим атмосферу настоящей кальянной у&nbsp;вас&nbsp;дома, в&nbsp;течение
+            60&nbsp;минут после заказа!
+          </p>
+          <a href="tel:+79656754080" class="start-display__tel-button button">Позвонить</a>
+          <a href="https://t.me/+79656754080" class="start-display__telegram-button button">Заказать в Telegram</a>
+          <a href="https://www.instagram.com/smoke_inside_khv/" class="start-display__instagram-button button">Наш Instagram</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="price" id="price">
+      <div class="container">
+        <h2 class="price__title title">Наши цены</h2>
+        <ul class="price__list">
+          <li class="price__item" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
+            <span class="price__item-number">1</span>
+            <div class="price__item-main">
+              <h3 class="price__item-title" itemprop="name">
+                Стандарт — <span itemprop="price">1500</span> руб.
+              </h3>
+              
+              <meta itemprop="priceCurrency" content="RUB" />
+              
+              <div>
+                <p class="price__item-description description" itemprop="includesObject">
+                  Кальян в полной комплектации
+                </p>
+                <p class="price__item-description description" itemprop="includesObject">
+                  + 6 углей
+                </p>
+              </div>
             </div>
-        </header>
-
-        <main>
-            <section class="start-display" id="start-display">
-                <div class="start-display__container container">
-                    <div class="start-display__content">
-                        <h1 class="start-display__title title" itemprop="name">Аренда кальянов в&nbsp;Хабаровске</h1>
-                        <p class="start-display__description description" itemprop="description">
-                            Мы&nbsp;создадим атмосферу настоящей кальянной у&nbsp;вас&nbsp;дома, в&nbsp;течение
-                            60&nbsp;минут после заказа!
-                        </p>
-                        <a href="tel:+79656754080" class="start-display__tel-button button">Позвонить</a>
-                        <a
-                            href="https://wa.me/79656754080?text=Здраствуйте%2C%20могу%20ли%20я%20заказать%20кальян%3F"
-                            class="start-display__whatsapp-button button"
-                            >Заказать в WhatsApp</a
-                        >
-                        <a
-                            href="https://www.instagram.com/smoke_inside_khv/"
-                            class="start-display__instagram-button button"
-                            >Наш Instagram</a
-                        >
-                    </div>
-                </div>
-            </section>
-
-            <section class="price" id="price">
-                <div class="container">
-                    <h2 class="price__title title">Наши цены</h2>
-                    <ul class="price__list">
-                        <li class="price__item" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
-                            <span class="price__item-number">1</span>
-                            <div class="price__item-main">
-                                <h3 class="price__item-title" itemprop="name">
-                                    Стандарт — <span itemprop="price">1400</span> руб.
-                                </h3>
-
-                                <meta itemprop="priceCurrency" content="RUB" />
-
-                                <div>
-                                    <p class="price__item-description description" itemprop="includesObject">
-                                        Кальян в полной комплектации
-                                    </p>
-                                    <p class="price__item-description description" itemprop="includesObject">
-                                        + 6 углей
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="price__item" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
-                            <span class="price__item-number">2</span>
-                            <div class="price__item-main">
-                                <h3 class="price__item-title" itemprop="name">
-                                    Премиум — <span itemprop="price">1700</span> руб.
-                                </h3>
-
-                                <meta itemprop="priceCurrency" content="RUB" />
-
-                                <div>
-                                    <p class="price__item-description description" itemprop="includesObject">
-                                        Кальян в полной комплектации
-                                    </p>
-                                    <p class="price__item-description description" itemprop="includesObject">
-                                        + 6 углей
-                                    </p>
-                                    <p class="price__item-description description" itemprop="includesObject">
-                                        + легкий табак на 2 забивки
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="price__item" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
-                            <span class="price__item-number">3</span>
-                            <div class="price__item-main">
-                                <h3 class="price__item-title" itemprop="name">
-                                    Люкс — <span itemprop="price">1900</span> руб.
-                                </h3>
-
-                                <meta itemprop="priceCurrency" content="RUB" />
-
-                                <div>
-                                    <p class="price__item-description description" itemprop="includesObject">
-                                        Кальян в полной комплектации
-                                    </p>
-                                    <p class="price__item-description description" itemprop="includesObject">
-                                        + 6 углей
-                                    </p>
-                                    <p class="price__item-description description" itemprop="includesObject">
-                                        + крепкий табак на 2 забивки
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="price__item">
-                            <span class="price__item-number">4</span>
-                            <div class="price__item-main">
-                                <h3 class="price__item-title">Доставка по центру — Бесплатно</h3>
-                                <p class="price__item-description description">
-                                    Доставка по центральному району Хабаровска
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="dop-price">
-                        <h3 class="title">Дополнительно:</h3>
-                        <ol class="dop-price__list">
-                            <!-- <li class="dop-price__list-item">
+          </li>
+          <li class="price__item" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
+            <span class="price__item-number">2</span>
+            <div class="price__item-main">
+              <h3 class="price__item-title" itemprop="name">
+                Премиум — <span itemprop="price">1900</span> руб.
+              </h3>
+              
+              <meta itemprop="priceCurrency" content="RUB" />
+              
+              <div>
+                <p class="price__item-description description" itemprop="includesObject">
+                  Кальян в полной комплектации
+                </p>
+                <p class="price__item-description description" itemprop="includesObject">
+                  + 6 углей
+                </p>
+                <p class="price__item-description description" itemprop="includesObject">
+                  + легкий табак на 2 забивки
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="price__item" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
+            <span class="price__item-number">3</span>
+            <div class="price__item-main">
+              <h3 class="price__item-title" itemprop="name">
+                Люкс — <span itemprop="price">2000</span> руб.
+              </h3>
+              
+              <meta itemprop="priceCurrency" content="RUB" />
+              
+              <div>
+                <p class="price__item-description description" itemprop="includesObject">
+                  Кальян в полной комплектации
+                </p>
+                <p class="price__item-description description" itemprop="includesObject">
+                  + 6 углей
+                </p>
+                <p class="price__item-description description" itemprop="includesObject">
+                  + крепкий табак на 2 забивки
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="price__item">
+            <span class="price__item-number">4</span>
+            <div class="price__item-main">
+              <h3 class="price__item-title">Доставка по центру — Бесплатно</h3>
+              <p class="price__item-description description">
+                Доставка по центральному району Хабаровска
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="dop-price">
+          <h3 class="title">Дополнительно:</h3>
+          <ol class="dop-price__list">
+            <!-- <li class="dop-price__list-item">
                                 Доставка по центральному району Хабаровска — <span>от 300 руб</span>
                             </li> -->
-                            <li class="dop-price__list-item">Доставка после 23:00 — <span>от 500 руб</span></li>
-                            <li class="dop-price__list-item">Помощь в подготовке кальяна — <span>от 200 руб</span></li>
-                        </ol>
-                    </div>
+            <li class="dop-price__list-item">Доставка после 23:00 — <span>от 500 руб</span></li>
+            <li class="dop-price__list-item">Помощь в подготовке кальяна — <span>от 300 руб</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    
+    <section class="our-hookah" id="our-hookah">
+      <div class="container">
+        <h2 class="about-us__title title">Наши кальяны</h2>
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="our-hookah__carousel-indicators carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          </ol>
+          
+          <div class="carousel-inner">
+            <div class="our-hookah__carousel-item carousel-item active" itemprop="owns" itemscope itemtype="https://schema.org/Product">
+              <img src="./dist/images/courusel-1.jpg" class="our-hookah__carousel-image" alt="Alpha Hookah Green" itemprop="image" />
+              <h3 class="our-hookah__courusel-title" itemprop="name">Alpha Hookah Green</h3>
+              <p class="our-hookah__courusel-description description" itemprop="description">
+                Alpha Hookah — эталон стиля и надежности. Узнаваемая вертикальная продувка и магнитный коннектор. Компактная шахта из нержавеющей стали обеспечивает идеальную тягу и чистый вкус.
+              </p>
+              
+              <div class="hidden-visibility" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
+                  <meta itemprop="name" content="Константин Прокофьев" />
                 </div>
-            </section>
-
-            <section class="our-hookah" id="our-hookah">
-                <div class="container">
-                    <h2 class="about-us__title title">Наши кальяны</h2>
-
-                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                        <ol class="our-hookah__carousel-indicators carousel-indicators">
-                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                        </ol>
-
-                        <div class="carousel-inner">
-                            <div
-                                class="our-hookah__carousel-item carousel-item active"
-                                itemprop="owns"
-                                itemscope
-                                itemtype="http://schema.org/Product"
-                            >
-                                <img
-                                    src="./dist/images/courusel-1.png"
-                                    class="our-hookah__carousel-image"
-                                    alt="Pandora Light"
-                                    itemprop="image"
-                                />
-                                <h3 class="our-hookah__courusel-title" itemprop="name">Pandora Light</h3>
-                                <p class="our-hookah__courusel-description description" itemprop="description">
-                                    Стильный кальян, дизайн которого отличается от стандартных «кальянов-палок»,
-                                    благодаря накладке на верхнюю часть шахты. Этот красавец сочетает в себе все
-                                    необходимые качества для домашнего курения.
-                                </p>
-
-                                <div
-                                    class="hidden-visibility"
-                                    itemprop="review"
-                                    itemscope
-                                    itemtype="https://schema.org/Review"
-                                >
-                                    <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
-                                        <meta itemprop="name" content="Константин Прокофьев" />
-                                    </div>
-                                    <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
-                                        <meta itemprop="ratingValue" content="4.5" />
-                                        <meta itemprop="bestRating" content="5" />
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="hidden-visibility"
-                                    itemprop="offers"
-                                    itemscope
-                                    itemtype="http://schema.org/AggregateOffer"
-                                >
-                                    <meta itemprop="lowPrice" content="1000" />
-                                    <meta itemprop="highPrice" content="1500" />
-                                    <meta itemprop="priceCurrency" content="RUB" />
-                                </div>
-                            </div>
-                            <div
-                                class="our-hookah__carousel-item carousel-item"
-                                itemprop="owns"
-                                itemscope
-                                itemtype="http://schema.org/Product"
-                            >
-                                <img
-                                    src="./dist/images/courusel-2.png"
-                                    class="our-hookah__carousel-image"
-                                    alt="Богатыръ Святогоръ"
-                                    itemprop="image"
-                                />
-                                <h3 class="our-hookah__courusel-title" itemprop="name">Богатыръ Святогоръ</h3>
-                                <p class="our-hookah__courusel-description description" itemprop="description">
-                                    Яркий представитель «кальянов-палок», которые очень популярны сегодня. Несмотря на
-                                    простой дизайн, этот кальян имеет невероятно красивую продувку, которая удивит всех
-                                    любителей домашней кальянной.
-                                </p>
-
-                                <div
-                                    class="hidden-visibility"
-                                    itemprop="review"
-                                    itemtype="https://schema.org/Review"
-                                    itemscope
-                                >
-                                    <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
-                                        <meta itemprop="name" content="Никита Кузьмин" />
-                                    </div>
-                                    <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
-                                        <meta itemprop="ratingValue" content="4" />
-                                        <meta itemprop="bestRating" content="5" />
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="hidden-visibility"
-                                    itemprop="offers"
-                                    itemscope
-                                    itemtype="http://schema.org/AggregateOffer"
-                                >
-                                    <meta itemprop="lowPrice" content="1000" />
-                                    <meta itemprop="highPrice" content="1500" />
-                                    <meta itemprop="priceCurrency" content="RUB" />
-                                </div>
-                            </div>
-                            <div
-                                class="our-hookah__carousel-item carousel-item"
-                                itemprop="owns"
-                                itemscope
-                                itemtype="http://schema.org/Product"
-                            >
-                                <img
-                                    src="./dist/images/courusel-3.png"
-                                    class="our-hookah__carousel-image"
-                                    alt="Mexanika Smoke"
-                                    itemprop="image"
-                                />
-                                <h3 class="our-hookah__courusel-title" itemprop="name">Mexanika Smoke Parovoz</h3>
-                                <p class="our-hookah__courusel-description description" itemprop="description">
-                                    Привлекательный кальян, выполненный из испанской стали, с модным
-                                    хайтек-индустриальным дизайном. Его функциональность идеально подходит для домашнего
-                                    использования.
-                                </p>
-
-                                <div
-                                    class="hidden-visibility"
-                                    itemprop="review"
-                                    itemtype="https://schema.org/Review"
-                                    itemscope
-                                >
-                                    <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
-                                        <meta itemprop="name" content="Теона Ермилова" />
-                                    </div>
-                                    <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
-                                        <meta itemprop="ratingValue" content="5" />
-                                        <meta itemprop="bestRating" content="5" />
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="hidden-visibility"
-                                    itemprop="offers"
-                                    itemscope
-                                    itemtype="http://schema.org/AggregateOffer"
-                                >
-                                    <meta itemprop="lowPrice" content="1000" />
-                                    <meta itemprop="highPrice" content="1500" />
-                                    <meta itemprop="priceCurrency" content="RUB" />
-                                </div>
-                            </div>
-
-                            <div
-                                class="our-hookah__carousel-item carousel-item"
-                                itemprop="owns"
-                                itemscope
-                                itemtype="http://schema.org/Product"
-                            >
-                                <img
-                                    src="./dist/images/courusel-4.png"
-                                    class="our-hookah__carousel-image"
-                                    alt="Арт-кальян"
-                                    itemprop="image"
-                                />
-                                <h3 class="our-hookah__courusel-title" itemprop="name">Арт-кальян</h3>
-                                <p class="our-hookah__courusel-description description" itemprop="description">
-                                    Хороший и функциональный кальян от российского производителя Арт-кальян. Благодаря
-                                    своему простому дизайну, он отлично подойдет для домашнего курения в кругу любителей
-                                    нестареющей классики.
-                                </p>
-
-                                <div
-                                    class="hidden-visibility"
-                                    itemprop="review"
-                                    itemtype="https://schema.org/Review"
-                                    itemscope
-                                >
-                                    <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
-                                        <meta itemprop="name" content="Алёна Шувалова" />
-                                    </div>
-                                    <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
-                                        <meta itemprop="ratingValue" content="4" />
-                                        <meta itemprop="bestRating" content="5" />
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="hidden-visibility"
-                                    itemprop="offers"
-                                    itemscope
-                                    itemtype="http://schema.org/AggregateOffer"
-                                >
-                                    <meta itemprop="lowPrice" content="1000" />
-                                    <meta itemprop="highPrice" content="1500" />
-                                    <meta itemprop="priceCurrency" content="RUB" />
-                                </div>
-                            </div>
-
-                            <a
-                                class="our-hookah__carousel-control-prev carousel-control-prev"
-                                href="#carouselExampleCaptions"
-                                role="button"
-                                data-slide="prev"
-                            >
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-
-                            <a
-                                class="our-hookah__carousel-control-next carousel-control-next"
-                                href="#carouselExampleCaptions"
-                                role="button"
-                                data-slide="next"
-                            >
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
+                <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
+                  <meta itemprop="ratingValue" content="4.5" />
+                  <meta itemprop="bestRating" content="5" />
                 </div>
-            </section>
-        </main>
-
-        <footer class="footer container">
-            <ul class="footer-list">
-                <li class="footer-item">
-                    <a
-                        href="https://wa.me/79656754080?text=Здраствуйте%2C%20могу%20ли%20я%20заказать%20кальян%3F"
-                        class="footer-link footer-whatsapp"
-                    ></a>
-                </li>
-                <li class="footer-item">
-                    <a href="https://www.instagram.com/smoke_inside_khv/" class="footer-link footer-instagram"></a>
-                </li>
-            </ul>
-        </footer>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"
-        ></script>
-
-        <script type="text/javascript" src="./dist/js/main.js"></script>
-
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript">
-            (function (m, e, t, r, i, k, a) {
-                m[i] =
-                    m[i] ||
-                    function () {
-                        (m[i].a = m[i].a || []).push(arguments);
-                    };
-                m[i].l = 1 * new Date();
-                (k = e.createElement(t)),
-                    (a = e.getElementsByTagName(t)[0]),
-                    (k.async = 1),
-                    (k.src = r),
-                    a.parentNode.insertBefore(k, a);
-            })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-            ym(61989232, "init", {
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                webvisor: true,
-            });
-        </script>
-        <noscript>
-            <div>
-                <img src="https://mc.yandex.ru/watch/61989232" style="position: absolute; left: -9999px" alt="" />
+              </div>
+              
+              <div class="hidden-visibility" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+                <meta itemprop="lowPrice" content="1500" />
+                <meta itemprop="highPrice" content="2000" />
+                <meta itemprop="priceCurrency" content="RUB" />
+              </div>
             </div>
-        </noscript>
-        <!-- /Yandex.Metrika counter -->
+            <div class="our-hookah__carousel-item carousel-item" itemprop="owns" itemscope itemtype="https://schema.org/Product">
+              <img src="./dist/images/courusel-2.jpg" class="our-hookah__carousel-image" alt="Nube White One" itemprop="image" />
+              <h3 class="our-hookah__courusel-title" itemprop="name">Nube White One</h3>
+              <p class="our-hookah__courusel-description description" itemprop="description">
+                Элегантный Nube White One с матовым покрытием Soft Touch. Поворотный диффузор регулирует затяжку, а система охлаждения Cool Down дарит чистый вкус. Премиальный немецкий пластик, устойчивый к царапинам и нагреву.
+              </p>
+              
+              <div class="hidden-visibility" itemprop="review" itemtype="https://schema.org/Review" itemscope>
+                <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
+                  <meta itemprop="name" content="Никита Кузьмин" />
+                </div>
+                <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
+                  <meta itemprop="ratingValue" content="4" />
+                  <meta itemprop="bestRating" content="5" />
+                </div>
+              </div>
+              
+              <div class="hidden-visibility" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+                <meta itemprop="lowPrice" content="1500" />
+                <meta itemprop="highPrice" content="2000" />
+                <meta itemprop="priceCurrency" content="RUB" />
+              </div>
+            </div>
+            <div class="our-hookah__carousel-item carousel-item" itemprop="owns" itemscope itemtype="https://schema.org/Product">
+              <img src="./dist/images/courusel-3.jpg" class="our-hookah__carousel-image" alt="Alpha Hookah Black" itemprop="image" />
+              <h3 class="our-hookah__courusel-title" itemprop="name">Alpha Hookah Black</h3>
+              <p class="our-hookah__courusel-description description" itemprop="description">
+                Alpha Hookah — эталон стиля и надежности. Узнаваемая вертикальная продувка и магнитный коннектор. Компактная шахта из нержавеющей стали обеспечивает идеальную тягу и чистый вкус.
+              </p>
+              
+              <div class="hidden-visibility" itemprop="review" itemtype="https://schema.org/Review" itemscope>
+                <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
+                  <meta itemprop="name" content="Теона Ермилова" />
+                </div>
+                <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
+                  <meta itemprop="ratingValue" content="5" />
+                  <meta itemprop="bestRating" content="5" />
+                </div>
+              </div>
+              
+              <div class="hidden-visibility" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+                <meta itemprop="lowPrice" content="1500" />
+                <meta itemprop="highPrice" content="2000" />
+                <meta itemprop="priceCurrency" content="RUB" />
+              </div>
+            </div>
+            
+            <div class="our-hookah__carousel-item carousel-item" itemprop="owns" itemscope itemtype="https://schema.org/Product">
+              <img src="./dist/images/courusel-4.jpg" class="our-hookah__carousel-image" alt="Koress K2" itemprop="image" />
+              <h3 class="our-hookah__courusel-title" itemprop="name">Koress K2</h3>
+              <p class="our-hookah__courusel-description description" itemprop="description">
+                KORESS K2 — идеальная тяга благодаря диффузору Turbo и широкой шахте. Магнитная фиксация шланга и чашки, продуманная продувка. Стильный итальянский дизайн и премиальные материалы в каждой детали.
+              </p>
+              
+              <div class="hidden-visibility" itemprop="review" itemtype="https://schema.org/Review" itemscope>
+                <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
+                  <meta itemprop="name" content="Алёна Шувалова" />
+                </div>
+                <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
+                  <meta itemprop="ratingValue" content="4" />
+                  <meta itemprop="bestRating" content="5" />
+                </div>
+              </div>
+              
+              <div class="hidden-visibility" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+                <meta itemprop="lowPrice" content="1500" />
+                <meta itemprop="highPrice" content="2000" />
+                <meta itemprop="priceCurrency" content="RUB" />
+              </div>
+            </div>
+            
+            <a class="our-hookah__carousel-control-prev carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            
+            <a class="our-hookah__carousel-control-next carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer container">
+    <ul class="footer-list">
+      <li class="footer-item">
+        <a href="https://t.me/+79656754080" class="footer-link footer-telegram"></a>
+      </li>
+      <li class="footer-item">
+        <a href="https://www.instagram.com/smoke_inside_khv/" class="footer-link footer-instagram"></a>
+      </li>
+    </ul>
+  </footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" src="./dist/js/main.js"></script>
+  
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function() {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      (k = e.createElement(t)),
+      (a = e.getElementsByTagName(t)[0]),
+      (k.async = 1),
+      (k.src = r),
+      a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(61989232, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+    });
+    
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/61989232" style="position: absolute; left: -9999px" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165061533-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-165061533-1");
+    
+  </script>
+</body>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165061533-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-
-            gtag("config", "UA-165061533-1");
-        </script>
-    </body>
 </html>

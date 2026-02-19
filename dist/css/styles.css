@@ -49,7 +49,6 @@ body {
   background-color: #1a1b1e;
   padding: 20px 0;
 }
-
 .header .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,7 +60,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
 @media screen and (min-width: 992px) {
   .header .header__container {
     -webkit-box-pack: justify;
@@ -83,14 +81,12 @@ body {
   font-size: 26px;
   text-align: center;
 }
-
 .logo:after {
   content: "аренда кальянов";
   font-weight: 200;
   font-family: "Exo 2", sans-serif;
   font-size: 14px;
 }
-
 .logo:hover {
   color: #c4a265;
 }
@@ -98,7 +94,6 @@ body {
 .navigation {
   display: none;
 }
-
 @media screen and (min-width: 992px) {
   .navigation {
     display: -webkit-box;
@@ -106,7 +101,6 @@ body {
     display: flex;
   }
 }
-
 .navigation .navigation__item {
   margin-left: 30px;
   padding-bottom: 4px;
@@ -115,15 +109,12 @@ body {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-
 .navigation .navigation__item:hover {
   border-bottom: 1px solid #c4a265;
 }
-
 .navigation .navigation__item__static:hover {
   border-bottom: 1px solid transparent;
 }
-
 .navigation .navigation__link {
   cursor: pointer;
 }
@@ -144,20 +135,17 @@ body {
   text-align: center;
   padding: 0 20px 0;
 }
-
 @media screen and (min-width: 576px) {
   .start-display {
     padding: 0;
   }
 }
-
 @media screen and (min-width: 992px) {
   .start-display {
     background-position: 20% 50%;
     background-size: auto 150%;
   }
 }
-
 @media screen and (min-width: 992px) {
   .start-display .start-display__container {
     display: -webkit-box;
@@ -168,67 +156,55 @@ body {
     justify-content: flex-end;
   }
 }
-
 .start-display .start-display__content {
   padding-top: 12vh;
 }
-
 @media screen and (min-width: 992px) {
   .start-display .start-display__content {
     width: 35%;
     margin-right: 15%;
   }
 }
-
 .start-display .start-display__title {
   display: block;
   margin: 0 auto 18px;
 }
-
 @media screen and (min-width: 992px) {
   .start-display .start-display__title {
     text-align: left;
   }
 }
-
 .start-display .start-display__description {
   display: block;
 }
-
 @media screen and (min-width: 992px) {
   .start-display .start-display__description {
     text-align: left;
   }
 }
-
-.start-display .start-display__whatsapp-button {
-  border-color: #4caf50;
-  background-color: rgba(76, 175, 80, 0.1);
+.start-display .start-display__telegram-button {
+  border-color: #0088cc;
+  background-color: rgba(0, 136, 204, 0.1);
 }
-
-.start-display .start-display__whatsapp-button:before {
-  background: url("../icons/whatsapp.png");
+.start-display .start-display__telegram-button:before {
+  background: url("../icons/telegram.png");
 }
-
 .start-display .start-display__instagram-button {
   position: relative;
-  border-color: #c13584;
+  border-color: rgb(193, 53, 132);
   background: -o-linear-gradient(45deg, rgba(64, 93, 230, 0.1), rgba(88, 81, 219, 0.1), rgba(131, 58, 180, 0.1), rgba(193, 53, 132, 0.1), rgba(225, 48, 108, 0.1), rgba(253, 29, 29, 0.1));
   background: linear-gradient(45deg, rgba(64, 93, 230, 0.1), rgba(88, 81, 219, 0.1), rgba(131, 58, 180, 0.1), rgba(193, 53, 132, 0.1), rgba(225, 48, 108, 0.1), rgba(253, 29, 29, 0.1));
 }
-
 .start-display .start-display__instagram-button:before {
   background: url("../icons/instagram.png");
 }
-
-.start-display .start-display__whatsapp-button,
+.start-display .start-display__telegram-button,
 .start-display .start-display__instagram-button {
   display: block;
   width: 100%;
   margin: 0 auto 20px;
 }
-
-.start-display .start-display__whatsapp-button:before,
+.start-display .start-display__telegram-button:before,
 .start-display .start-display__instagram-button:before {
   display: inline-block;
   vertical-align: bottom;
@@ -239,94 +215,91 @@ body {
   background-position: 50% 50%;
   margin-right: 8px;
 }
-
 @media screen and (min-width: 350px) {
-  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__telegram-button,
   .start-display .start-display__instagram-button {
     width: 85%;
   }
 }
-
 @media screen and (min-width: 520px) {
-  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__telegram-button,
   .start-display .start-display__instagram-button {
     width: 75%;
   }
 }
-
 @media screen and (min-width: 768px) {
-  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__telegram-button,
   .start-display .start-display__instagram-button {
     width: 50%;
   }
 }
-
 @media screen and (min-width: 992px) {
-  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__telegram-button,
   .start-display .start-display__instagram-button {
     width: 75%;
     margin: 20px 0;
   }
 }
-
 @media screen and (min-width: 1200px) {
-  .start-display .start-display__whatsapp-button,
+  .start-display .start-display__telegram-button,
   .start-display .start-display__instagram-button {
     width: 65%;
     margin: 20px 0;
   }
 }
-
 .start-display .start-display__tel-button {
   width: 100%;
   margin-top: 40px;
 }
-
 @media screen and (min-width: 350px) {
   .start-display .start-display__tel-button {
     width: 85%;
   }
 }
-
 @media screen and (min-width: 520px) {
   .start-display .start-display__tel-button {
     width: 75%;
   }
 }
-
 @media screen and (min-width: 768px) {
   .start-display .start-display__tel-button {
     width: 50%;
   }
 }
-
 @media screen and (min-width: 992px) {
   .start-display .start-display__tel-button {
     width: 75%;
     margin: 20px 0;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .start-display .start-display__tel-button {
     width: 65%;
     margin: 20px 0;
   }
 }
+.start-display .start-display__tel-button,
+.start-display .start-display__telegram-button,
+.start-display .start-display__instagram-button {
+  transition: 0.3s ease-in-out;
+}
+.start-display .start-display__tel-button:hover,
+.start-display .start-display__telegram-button:hover,
+.start-display .start-display__instagram-button:hover {
+  opacity: 0.8;
+}
 
 .price {
   background-color: #fff;
-  -webkit-box-shadow: 0px -3px 4px 4px white;
-  box-shadow: 0px -3px 4px 4px white;
+  -webkit-box-shadow: 0px -3px 4px 4px rgb(255, 255, 255);
+  box-shadow: 0px -3px 4px 4px rgb(255, 255, 255);
   color: #333;
   text-align: left;
   padding: 60px 0;
 }
-
 .price .price__title {
   margin-bottom: 60px;
 }
-
 .price .price__item-number {
   flex-shrink: 0;
   font-size: 52px;
@@ -335,19 +308,16 @@ body {
   width: 20%;
   margin-right: 30px;
 }
-
 .price .price__item {
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .price .price__item .price__item-title {
   font-size: 18px;
   margin-bottom: 0.5rem;
 }
-
 @media screen and (min-width: 500px) {
   .price .price__item {
     -webkit-box-pack: center;
@@ -355,18 +325,15 @@ body {
     justify-content: center;
   }
 }
-
 .price .price__item:last-child {
   padding-bottom: 30px;
   border-bottom: 1px solid #ddd;
 }
-
 @media screen and (min-width: 500px) {
   .price .price__item-main {
     width: 325px;
   }
 }
-
 .price .price__item-description {
   text-align: left;
 }
@@ -375,7 +342,6 @@ body {
   max-width: 400px;
   margin: 0 auto;
 }
-
 .dop-price__list-item {
   padding: 4px 0;
 }
@@ -384,49 +350,44 @@ body {
   padding: 60px 0 30px;
   text-align: center;
 }
-
 .our-hookah .our-hookah__carousel-item {
-  height: calc(100vw - 30px + 30px + 140px);
+  height: calc(100vw - 30px + 30px + 160px);
 }
-
 @media screen and (min-width: 425px) {
   .our-hookah .our-hookah__carousel-item {
-    height: calc(100vw - 30px + 30px + 100px);
+    height: calc(100vw - 30px + 30px + 120px);
   }
 }
-
 @media screen and (min-width: 500px) {
   .our-hookah .our-hookah__carousel-item {
-    height: calc(500px + 30px + 80px);
+    height: 650px;
   }
 }
-
 .our-hookah .our-hookah__courusel-title {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
-
 @media screen and (min-width: 530px) {
   .our-hookah .our-hookah__courusel-description {
     width: 500px;
   }
 }
-
 .our-hookah .our-hookah__carousel-indicators {
   position: unset;
   margin-bottom: 24px;
 }
-
 .our-hookah .our-hookah__carousel-image {
   margin: 0 auto 30px;
+  display: block;
+  max-height: 500px;
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 24px;
 }
-
 .our-hookah .our-hookah__carousel-control-next,
 .our-hookah .our-hookah__carousel-control-prev {
   display: none;
   padding-top: 250px;
 }
-
 @media screen and (min-width: 600px) {
   .our-hookah .our-hookah__carousel-control-next,
   .our-hookah .our-hookah__carousel-control-prev {
@@ -438,7 +399,6 @@ body {
   padding: 40px 0;
   border-top: 1px solid #333;
 }
-
 .footer .footer-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,11 +410,9 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
 .footer .footer-item {
   padding: 0 4px;
 }
-
 .footer .footer-link {
   display: block;
   width: 24px;
@@ -462,11 +420,9 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-
-.footer .footer-whatsapp {
-  background: url("/dist/icons/whatsapp-24.png");
+.footer .footer-telegram {
+  background: url("/dist/icons/telegram-24.png");
 }
-
 .footer .footer-instagram {
   background: url("/dist/icons/instagram-24.png");
 }
